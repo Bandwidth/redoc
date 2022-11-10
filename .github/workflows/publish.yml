@@ -1,4 +1,4 @@
-name: Publish package to NPM on Release
+name: Publish Package to NPM on Release
 
 on:
   push:
