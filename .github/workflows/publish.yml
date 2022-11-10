@@ -6,6 +6,7 @@ on:
 
 jobs:
   bundle:
+    name: Bundle
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,12 +33,14 @@ jobs:
           retention-days: 1
   
   unit-tests:
+    name: Unit Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: npm ci
       - run: npm test
   e2e-tests:
+    name: E2E Tests
     needs: [bundle]
     runs-on: ubuntu-latest
     steps:
