@@ -46,8 +46,8 @@ export const Operation = observer(({ operation }: OperationProps): JSX.Element =
     <OptionsContext.Consumer>
       {options => (
         <Row {...{ [SECTION_ATTR]: operation.operationHash }} id={operation.operationHash}>
-          <MiddlePanel>
-            <H2>
+          <MiddlePanel className="middle-panel">
+            <H2 className="operation-header">
               <ShareLink to={operation.id} />
               {badgesBefore.map(({ name, color }) => (
                 <Badge type="primary" key={name} color={color}>
@@ -71,7 +71,7 @@ export const Operation = observer(({ operation }: OperationProps): JSX.Element =
               <Endpoint operation={operation} inverted={true} />
             )}
             {hasDescription && (
-              <Description>
+              <Description className="operation-description">
                 {description !== undefined && <Markdown source={description} />}
                 {externalDocs && <ExternalDocumentation externalDocs={externalDocs} />}
               </Description>
@@ -82,7 +82,7 @@ export const Operation = observer(({ operation }: OperationProps): JSX.Element =
             <ResponsesList responses={operation.responses} />
             <CallbacksList callbacks={operation.callbacks} />
           </MiddlePanel>
-          <DarkRightPanel>
+          <DarkRightPanel className="right-panel">
             {!options.pathInMiddlePanel && !isWebhook && <Endpoint operation={operation} />}
             <RequestSamples operation={operation} />
             <ResponseSamples operation={operation} />
