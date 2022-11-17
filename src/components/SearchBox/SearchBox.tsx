@@ -159,7 +159,7 @@ export class SearchBox extends React.PureComponent<SearchBoxProps, SearchBoxStat
               wheelPropagation: false,
             }}
           >
-            <SearchResultsBox data-role="search:results">
+            <SearchResultsBox data-role="search:results" className="search-results">
               {results.map((res, idx) => (
                 <MenuItem
                   item={Object.create(res.item, {
@@ -177,7 +177,7 @@ export class SearchBox extends React.PureComponent<SearchBoxProps, SearchBoxStat
           </PerfectScrollbarWrap>
         )}
         {this.state.term && this.state.noResults ? (
-          <SearchResultsBox data-role="search:results">{l('noResultsFound')}</SearchResultsBox>
+          <SearchResultsBox data-role="search:results" className="search-no-results">{l('noResultsFound')}</SearchResultsBox>
         ) : null}
       </SearchWrap>
     );
