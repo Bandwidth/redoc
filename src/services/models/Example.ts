@@ -1,5 +1,5 @@
 import type { OpenAPIEncoding, OpenAPIExample, Referenced } from '../../types';
-import { isFormUrlEncoded, isJsonLike, urlFormEncodePayload } from '../../utils/openapi';
+import { isFormUrlEncoded, isJsonLike, isXmlLike, urlFormEncodePayload } from '../../utils/openapi';
 import type { OpenAPIParser } from '../OpenAPIParser';
 
 const externalExamplesCache: { [url: string]: Promise<any> } = {};
@@ -17,6 +17,8 @@ export class ExampleModel {
     encoding?: { [field: string]: OpenAPIEncoding },
   ) {
     const { resolved: example } = parser.deref(infoOrRef);
+    console.log('Value:', example.value);
+    console.log('InfoOrRef:', infoOrRef);
     this.value = example.value;
     this.summary = example.summary;
     this.description = example.description;
@@ -50,12 +52,17 @@ export class ExampleModel {
           } catch (e) {
             return txt;
           }
+        } else if (isXmlLike(mimeType)) {
+          try {
+            return JSON.parse(txt); // Needs to be changed to stringify xml
+          } catch (e) {
+            return txt;
+          }
         } else {
           return txt;
         }
       });
     });
-
     return externalExamplesCache[this.externalValueUrl];
   }
 }

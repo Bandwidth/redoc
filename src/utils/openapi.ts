@@ -164,6 +164,10 @@ export function isJsonLike(contentType: string): boolean {
   return contentType.search(/json/i) !== -1;
 }
 
+export function isXmlLike(contentType: string): boolean {
+  return contentType.search(/xml/i) !== -1;
+}
+
 export function isFormUrlEncoded(contentType: string): boolean {
   return contentType === 'application/x-www-form-urlencoded';
 }

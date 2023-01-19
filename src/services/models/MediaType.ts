@@ -4,7 +4,7 @@ import type { OpenAPIMediaType } from '../../types';
 import type { RedocNormalizedOptions } from '../RedocNormalizedOptions';
 import { SchemaModel } from './Schema';
 
-import { isJsonLike, mapValues } from '../../utils';
+import { isJsonLike, isXmlLike, mapValues } from '../../utils';
 import type { OpenAPIParser } from '../OpenAPIParser';
 import { ExampleModel } from './Example';
 
@@ -26,6 +26,7 @@ export class MediaTypeModel {
     info: OpenAPIMediaType,
     options: RedocNormalizedOptions,
   ) {
+    console.log('Name:', name);
     this.name = name;
     this.isRequestType = isRequestType;
     this.schema = info.schema && new SchemaModel(parser, info.schema, '', options);
@@ -47,6 +48,30 @@ export class MediaTypeModel {
       };
     } else if (isJsonLike(name)) {
       this.generateExample(parser, info);
+    } else if (isXmlLike(name)) {
+      this.generateXmlExample(parser, info);
+    }
+  }
+
+  generateXmlExample(parser: OpenAPIParser, info: OpenAPIMediaType) {
+    const samplerOptions = {
+      skipReadOnly: this.isRequestType,
+      skipWriteOnly: !this.isRequestType,
+      skipNonRequired: this.isRequestType && this.onlyRequiredInSamples,
+      maxSampleDepth: this.generatedPayloadSamplesMaxDepth,
+    };
+    if (this.schema) {
+      console.log('Info Schema:', Sampler.sample(info.schema as any, samplerOptions, parser.spec));
+      this.examples = {
+        default: new ExampleModel(
+          parser,
+          {
+            value: Sampler.sample(info.schema as any, samplerOptions, parser.spec), // This creates a JSON object from schema
+          },
+          this.name,
+          info.encoding,
+        ),
+      };
     }
   }
 
