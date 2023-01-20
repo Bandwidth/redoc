@@ -53,6 +53,13 @@ export class MediaTypeModel {
     }
   }
 
+  /**
+   * This is where we will need to do some work - need to convert an object into something that the xmlbuilder2 library can understand, and then convert to XML
+   *
+   * https://stackoverflow.com/questions/24309184/whats-the-best-json-or-js-object-to-xml-converter-module-for-node-js
+   * @param parser
+   * @param info
+   */
   generateXmlExample(parser: OpenAPIParser, info: OpenAPIMediaType) {
     const samplerOptions = {
       skipReadOnly: this.isRequestType,
@@ -61,7 +68,6 @@ export class MediaTypeModel {
       maxSampleDepth: this.generatedPayloadSamplesMaxDepth,
     };
     if (this.schema) {
-      console.log('Info Schema:', Sampler.sample(info.schema as any, samplerOptions, parser.spec));
       this.examples = {
         default: new ExampleModel(
           parser,
