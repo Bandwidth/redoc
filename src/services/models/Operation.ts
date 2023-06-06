@@ -78,6 +78,7 @@ export class OperationModel implements IMenuItem {
   httpVerb: string;
   badges: OpenAPIXBadges[];
   deprecated: boolean;
+  badges: OperationCustomBadge[];
   path: string;
   servers: OpenAPIServer[];
   security: SecurityRequirementModel[];
@@ -102,6 +103,7 @@ export class OperationModel implements IMenuItem {
     this.externalDocs = operationSpec.externalDocs;
 
     this.deprecated = !!operationSpec.deprecated;
+    this.badges = operationSpec['x-badges'] ? operationSpec['x-badges'] : [];
     this.httpVerb = operationSpec.httpVerb;
     this.deprecated = !!operationSpec.deprecated;
     this.operationId = operationSpec.operationId;
