@@ -49,7 +49,10 @@ enter the URL for your definition and select **TRY IT**.
 
 ## Usage
 
-Redoc is provided as a CLI tool (also distributed as a Docker image), HTML tag, and React component.
+Additionally, all the 1.x releases are hosted on our GitHub Pages-based CDN **(deprecated)**:
+- particular release, for example `v1.2.0`: https://rebilly.github.io/ReDoc/releases/v1.2.0/redoc.min.js
+- `v1.x.x` release: https://rebilly.github.io/ReDoc/releases/v1.x.x/redoc.min.js
+- `latest` release: https://rebilly.github.io/ReDoc/releases/latest/redoc.min.js - points to latest 1.x.x release since 2.x releases are not hosted on this CDN but on unpkg.
 
 ### Generate documentation from the CLI
 
@@ -135,16 +138,51 @@ Redoc uses the following [specification extensions](https://redocly.com/docs/api
 
 ## Releases
 
-**The README for the `1.x` version is on the [v1.x](https://github.com/Redocly/redoc/tree/v1.x) branch.**
-
-All the 2.x releases are deployed to npm and can be used with Redocly-cdn:
-- particular release, for example, `v2.0.0`: https://cdn.redoc.ly/redoc/v2.0.0/bundles/redoc.standalone.js
-- `latest` release: https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js
-
-Additionally, all the 1.x releases are hosted on our GitHub Pages-based CDN **(deprecated)**:
-- particular release, for example `v1.2.0`: https://rebilly.github.io/ReDoc/releases/v1.2.0/redoc.min.js
-- `v1.x.x` release: https://rebilly.github.io/ReDoc/releases/v1.x.x/redoc.min.js
-- `latest` release: https://rebilly.github.io/ReDoc/releases/latest/redoc.min.js - points to latest 1.x.x release since 2.x releases are not hosted on this CDN but on unpkg.
+* `disableSearch` - disable search indexing and search box.
+* `minCharacterLengthToInitSearch` - set minimal characters length to init search, default `3`, minimal `1`.
+* `expandDefaultServerVariables` - enable expanding default server variables, default `false`.
+* `expandResponses` - specify which responses to expand by default by response codes. Values should be passed as comma-separated list without spaces e.g. `expandResponses="200,201"`. Special value `"all"` expands all responses by default. Be careful: this option can slow-down documentation rendering time.
+* `generatedPayloadSamplesMaxDepth` - set the maximum render depth for JSON payload samples (responses and request body). The default value is `10`.
+* `maxDisplayedEnumValues` - display only specified number of enum values. hide rest values under spoiler.
+* `hideDownloadButton` - do not show "Download" spec button. **THIS DOESN'T MAKE YOUR SPEC PRIVATE**, it just hides the button.
+* `downloadFileName` - set a custom file name for the downloaded API definition file.
+* `downloadDefinitionUrl` - If the 'Download' button is visible in the API reference documentation (hideDownloadButton=false), the URL configured here opens when that button is selected. Provide it as an absolute URL with the full URI scheme.
+* `hideHostname` - if set, the protocol and hostname is not shown in the operation definition.
+* `hideLoading` - do not show loading animation. Useful for small docs.
+* `hideFab` - do not show FAB in mobile view. Useful for implementing a custom floating action button.
+* `hideSchemaPattern` - if set, the pattern is not shown in the schema.
+* `hideSingleRequestSampleTab` - do not show the request sample tab for requests with only one sample.
+* `showObjectSchemaExamples` - show object schema example in the properties, default `false`.
+* `expandSingleSchemaField` - automatically expand single field in a schema
+* `schemaExpansionLevel` - specifies whether to automatically expand schemas. Special value `"all"` expands all levels. The default value is `0`.
+* `jsonSampleExpandLevel` - set the default expand level for JSON payload samples (responses and request body). Special value `"all"` expands all levels. The default value is `2`.
+* `hideSchemaTitles` - do not display schema `title` next to to the type
+* `simpleOneOfTypeLabel` - show only unique oneOf types in the label without titles
+* `sortEnumValuesAlphabetically` - set to true, sorts all enum values in all schemas alphabetically
+* `sortOperationsAlphabetically` - set to true, sorts operations in the navigation sidebar and in the middle panel alphabetically
+* `sortTagsAlphabetically` - set to true, sorts tags in the navigation sidebar and in the middle panel alphabetically
+* `lazyRendering` - _Not implemented yet_ ~~if set, enables lazy rendering mode in ReDoc. This mode is useful for APIs with big number of operations (e.g. > 50). In this mode ReDoc shows initial screen ASAP and then renders the rest operations asynchronously while showing progress bar on the top. Check out the [demo](\\redocly.github.io/redoc) for the example.~~
+* `menuToggle` - if true, clicking second time on expanded menu item collapses it, default `true`.
+* `nativeScrollbars` - use native scrollbar for sidemenu instead of perfect-scroll (scrolling performance optimization for big specs).
+* `onlyRequiredInSamples` - shows only required fields in request samples.
+* `pathInMiddlePanel` - show path link and HTTP verb in the middle panel instead of the right one.
+* `requiredPropsFirst` - show required properties first ordered in the same order as in `required` array.
+* `scrollYOffset` - If set, specifies a vertical scroll-offset. This is often useful when there are fixed positioned elements at the top of the page, such as navbars, headers etc;
+`scrollYOffset` can be specified in various ways:
+  * **number**: A fixed number of pixels to be used as offset.
+  * **selector**: selector of the element to be used for specifying the offset. The distance from the top of the page to the element's bottom is used as offset.
+  * **function**: A getter function. Must return a number representing the offset (in pixels).
+* `showExtensions` - show vendor extensions ("x-" fields). Extensions used by Redoc are ignored. Can be boolean or an array of `string` with names of extensions to display.
+* `sortPropsAlphabetically` - sort properties alphabetically.
+* `payloadSampleIdx` - if set, payload sample is inserted at this index or last. Indexes start from 0.
+* `theme` - Redoc theme. For details check [theme docs](#redoc-theme-object).
+* `untrustedSpec` - if set, the spec is considered untrusted and all HTML/markdown is sanitized to prevent XSS. **Disabled by default** for performance reasons. **Enable this option if you work with untrusted user data!**
+* `nonce` - if set, the provided value is injected in every injected HTML element in the `nonce` attribute. Useful when using CSP, see https://webpack.js.org/guides/csp/.
+* `sideNavStyle` - can be specified in various ways:
+  * **summary-only**: displays a summary in the sidebar navigation item. (**default**)
+  * **path-only**: displays a path in the sidebar navigation item.
+  * **id-only**: displays the operation id with a fallback to the path in the sidebar navigation item.
+* `showWebhookVerb` - when set to `true`, shows the HTTP request method for webhooks in operations and in the sidebar.
 
 
 ## Development
