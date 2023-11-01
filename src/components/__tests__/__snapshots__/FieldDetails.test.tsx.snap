@@ -6,17 +6,17 @@ exports[`FieldDetailsComponent renders correctly 1`] = `
 >
   <div>
     <span
-      class="sc-kEqXSa sc-iqAclL kbXjKX fIBWK"
+      class="sc-kpDqfm sc-dAlyuH cGRfjn gHomYR"
     >
       test type prefix
     </span>
     <span
-      class="sc-kEqXSa sc-crzoAE kbXjKX dPbcpi"
+      class="sc-kpDqfm sc-jlZhew cGRfjn dYtiIA"
     >
       array
     </span>
     <span
-      class="sc-kEqXSa sc-dIsUp kbXjKX jKcFhO"
+      class="sc-kpDqfm sc-cwHptR cGRfjn gyVIPr"
     >
        (test title) 
     </span>
@@ -25,7 +25,7 @@ exports[`FieldDetailsComponent renders correctly 1`] = `
     >
        
       <span
-        class="sc-kEqXSa sc-iemWCZ kbXjKX jirMag"
+        class="sc-kpDqfm sc-gFqAkR cGRfjn fYEICH"
       >
           
       </span>
@@ -33,13 +33,13 @@ exports[`FieldDetailsComponent renders correctly 1`] = `
   </div>
   <div>
     <span
-      class="sc-kEqXSa kbXjKX"
+      class="sc-kpDqfm cGRfjn"
     >
        Default: 
     </span>
      
     <span
-      class="sc-kEqXSa sc-fFSPTT kbXjKX jxiCED field-example"
+      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn field-example"
     >
       []
     </span>
@@ -47,20 +47,20 @@ exports[`FieldDetailsComponent renders correctly 1`] = `
    
   <div>
     <span
-      class="sc-kEqXSa kbXjKX"
+      class="sc-kpDqfm cGRfjn"
     >
        Example: 
     </span>
      
     <span
-      class="sc-kEqXSa sc-fFSPTT kbXjKX jxiCED field-example"
+      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn field-example"
     >
       "example"
     </span>
   </div>
   <div>
     <div
-      class="sc-iTVJFM sc-khIgEk KQjrk bwNvGY"
+      class="sc-lcIPJg sc-hknOHE gBHqkN jFBMaE"
     >
       <p>
         test description
@@ -78,15 +78,15 @@ exports[`FieldDetailsComponent renders correctly when default value is object in
 >
   <div>
     <span
-      class="sc-kEqXSa sc-iqAclL kbXjKX fIBWK"
+      class="sc-kpDqfm sc-dAlyuH cGRfjn gHomYR"
     />
     <span
-      class="sc-kEqXSa sc-crzoAE kbXjKX dPbcpi"
+      class="sc-kpDqfm sc-jlZhew cGRfjn dYtiIA"
     >
       object
     </span>
     <span
-      class="sc-kEqXSa sc-dIsUp kbXjKX jKcFhO"
+      class="sc-kpDqfm sc-cwHptR cGRfjn gyVIPr"
     >
        (test title) 
     </span>
@@ -95,7 +95,7 @@ exports[`FieldDetailsComponent renders correctly when default value is object in
     >
        
       <span
-        class="sc-kEqXSa sc-iemWCZ kbXjKX jirMag"
+        class="sc-kpDqfm sc-gFqAkR cGRfjn fYEICH"
       >
           
       </span>
@@ -103,13 +103,13 @@ exports[`FieldDetailsComponent renders correctly when default value is object in
   </div>
   <div>
     <span
-      class="sc-kEqXSa kbXjKX"
+      class="sc-kpDqfm cGRfjn"
     >
        Default: 
     </span>
      
     <span
-      class="sc-kEqXSa sc-fFSPTT kbXjKX jxiCED field-example"
+      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn field-example"
     >
       {"properties":{}}
     </span>
@@ -117,20 +117,20 @@ exports[`FieldDetailsComponent renders correctly when default value is object in
    
   <div>
     <span
-      class="sc-kEqXSa kbXjKX"
+      class="sc-kpDqfm cGRfjn"
     >
        Example: 
     </span>
      
     <span
-      class="sc-kEqXSa sc-fFSPTT kbXjKX jxiCED field-example"
+      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn field-example"
     >
       "example"
     </span>
   </div>
   <div>
     <div
-      class="sc-iTVJFM sc-khIgEk KQjrk bwNvGY"
+      class="sc-lcIPJg sc-hknOHE gBHqkN jFBMaE"
     >
       <p>
         test description
@@ -148,15 +148,15 @@ exports[`FieldDetailsComponent renders correctly when field items have string ty
 >
   <div>
     <span
-      class="sc-kEqXSa sc-iqAclL kbXjKX fIBWK"
+      class="sc-kpDqfm sc-dAlyuH cGRfjn gHomYR"
     />
     <span
-      class="sc-kEqXSa sc-crzoAE kbXjKX dPbcpi"
+      class="sc-kpDqfm sc-jlZhew cGRfjn dYtiIA"
     >
       Array of strings
     </span>
     <span
-      class="sc-kEqXSa sc-dIsUp kbXjKX jKcFhO"
+      class="sc-kpDqfm sc-cwHptR cGRfjn gyVIPr"
     >
        (test title) 
     </span>
@@ -165,17 +165,17 @@ exports[`FieldDetailsComponent renders correctly when field items have string ty
     >
        
       <span
-        class="sc-kEqXSa sc-iemWCZ kbXjKX jirMag"
+        class="sc-kpDqfm sc-gFqAkR cGRfjn fYEICH"
       >
           
       </span>
     </span>
     <span
-      class="sc-kEqXSa sc-iqAclL sc-iIgjPs kbXjKX fIBWK dZiNhe"
+      class="sc-kpDqfm sc-dAlyuH sc-dxcDKg cGRfjn gHomYR gXntsr"
     >
       [
       <span
-        class="sc-kEqXSa sc-fnVZcZ kbXjKX iaObLQ field-pattern"
+        class="sc-kpDqfm sc-eDPEul cGRfjn erJHow field-pattern"
       >
         ^see regex[0-9]$
       </span>
@@ -185,20 +185,20 @@ exports[`FieldDetailsComponent renders correctly when field items have string ty
    
   <div>
     <span
-      class="sc-kEqXSa kbXjKX"
+      class="sc-kpDqfm cGRfjn"
     >
        Example: 
     </span>
      
     <span
-      class="sc-kEqXSa sc-fFSPTT kbXjKX jxiCED field-example"
+      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn field-example"
     >
       "example"
     </span>
   </div>
   <div>
     <div
-      class="sc-iTVJFM sc-khIgEk KQjrk bwNvGY"
+      class="sc-lcIPJg sc-hknOHE gBHqkN jFBMaE"
     >
       <p>
         test description
