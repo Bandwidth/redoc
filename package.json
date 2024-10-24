@@ -143,7 +143,7 @@
     "@redocly/openapi-core": "^1.0.0-rc.2",
     "classnames": "^2.3.1",
     "decko": "^1.2.0",
-    "dompurify": "^2.2.8",
+    "dompurify": "^2.5.0",
     "eventemitter3": "^4.0.7",
     "json-pointer": "^0.6.2",
     "lunr": "^2.3.9",
