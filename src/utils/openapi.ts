@@ -663,7 +663,6 @@ export function isRedocExtension(key: string): boolean {
     'x-badges': true,
     'x-additionalPropertiesName': true,
     'x-explicitMappingOnly': true,
-    'x-badges': true,
   };
 
   return key in redocExtensions;
