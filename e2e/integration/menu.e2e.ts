@@ -4,7 +4,44 @@ describe('Menu', () => {
       cy.visit('e2e/standalone.html');
     });
     it('should have valid items count', () => {
-      cy.get('.menu-content').find('li').should('have.length', 40);
+      cy.get('.menu-content').find('li').should('have.length', 35);
+    });
+
+    it('should sync active menu items while scroll', () => {
+      cy.contains('h2', 'Introduction')
+        .scrollIntoView()
+        .get('[role=menuitem] > label.active')
+        .should('have.text', 'Introduction');
+
+      cy.contains('h2', 'Add a new pet to the store')
+        .scrollIntoView()
+        .wait(100)
+        .get('[role=menuitem] > label.active')
+        .children()
+        .last()
+        .should('have.text', 'Add a new pet to the store')
+        .should('be.visible');
+    });
+
+    it('should sync active menu items while scroll back and scroll again', () => {
+      cy.contains('h2', 'Add a new pet to the store')
+        .scrollIntoView()
+        .wait(100)
+        .get('[role=menuitem] > label.active')
+        .children()
+        .last()
+        .should('have.text', 'Add a new pet to the store')
+        .should('be.visible');
+
+      cy.contains('h1', 'Swagger Petstore').scrollIntoView().wait(100);
+
+      cy.contains('h2', 'Introduction')
+        .scrollIntoView()
+        .wait(100)
+        .get('[role=menuitem] > label.active')
+        .should('have.text', 'Introduction');
+
+      cy.url().should('include', '#section/Introduction');
     });
 
     it('should update URL hash when clicking on menu items', () => {
@@ -13,6 +50,31 @@ describe('Menu', () => {
         .should('have.text', 'schemaCat')
         .click({ force: true });
       cy.location('hash').should('equal', '#schema/Cat');
+    });
+
+    it('should contains badge schema from x-badges', () => {
+      cy.contains('h2', 'Add a new pet to the store').scrollIntoView();
+
+      cy.contains('h2 > span', 'Beta')
+        .scrollIntoView()
+        .wait(100)
+        .get('[role=menuitem] > label.active')
+        .children('span[type="badge"]')
+        .should('have.text', 'Beta');
+
+      cy.contains('h2 > span', 'Alpha')
+        .scrollIntoView()
+        .wait(100)
+        .get('[role=menuitem] > label.active')
+        .children('span[type="badge"]')
+        .should('have.text', 'Alpha');
+
+      cy.contains('h2 > span', 'Gamma')
+        .scrollIntoView()
+        .wait(100)
+        .get('[role=menuitem] > label.active')
+        .children('span[type="badge"]')
+        .should('have.text', 'Gamma');
     });
 
     it('should contains Cat schema in Pet using x-tags', () => {

@@ -109,12 +109,15 @@ paths:
     post:
       tags:
         - pet
+      x-badges:
+        - name: 'Beta'
+          position: before
+          color: purple
+        - name: Global
+          type: global
       summary: Add a new pet to the store
       description: Add new pet to the store inventory.
       operationId: addPet
-      x-badges:
-        - name: Global
-          type: global
       responses:
         '405':
           description: Invalid input
@@ -156,12 +159,14 @@ paths:
     put:
       tags:
         - pet
+      x-badges:
+        - name: 'Alpha'
+          color: purple
+        - name: US Only
+          type: usonly
       summary: Update an existing pet
       description: ''
       operationId: updatePet
-      x-badges:
-        - name: US Only
-          type: usonly
       responses:
         '400':
           description: Invalid ID supplied
@@ -782,6 +787,8 @@ paths:
     get:
       tags:
         - pet
+      x-badges:
+        - name: 'Gamma'
       summary: Find pet by ID
       description: Returns a single pet
       operationId: getPetById
