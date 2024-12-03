@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
 
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
           key: npm-${{ hashFiles('package-lock.json') }}
@@ -32,7 +32,7 @@ jobs:
         run: npm run bundle
 
       - name: Store bundle artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bundles
           path: bundles
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Clean Install
         run: npm ci
@@ -57,13 +57,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Clean Install
         run: npm ci
 
       - name: Download bundled artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: bundles
           path: bundles
@@ -86,16 +86,16 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Download bundled artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: bundles
           path: bundles
 
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
           key: npm-${{ hashFiles('package-lock.json') }}
@@ -143,22 +143,22 @@ jobs:
           fi
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '14.x'
+          node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Download bundled artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: bundles
           path: bundles
 
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
           key: npm-${{ hashFiles('package-lock.json') }}
