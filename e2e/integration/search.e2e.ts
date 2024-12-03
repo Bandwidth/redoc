@@ -16,7 +16,7 @@ describe('Search', () => {
 
     getSearchInput().type('t', { force: true });
     cy.get('[role=search] [role=menuitem]')
-      .should('have.length', 4)
+      .should('have.length', 3)
       .first()
       .should('contain', 'Delete purchase order');
 
