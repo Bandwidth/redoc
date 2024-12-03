@@ -29,11 +29,11 @@ exports[`#loadAndBundleSpec should load And Bundle Spec demo/openapi.yaml 1`] = 
               ],
             },
           },
-          "application/xml": Object {
-            "schema": Object {
-              "properties": Object {
-                "name": Object {
-                  "default": Array [],
+          "application/xml": {
+            "schema": {
+              "properties": {
+                "name": {
+                  "default": [],
                   "description": "hooray",
                   "type": "string",
                 },
@@ -103,7 +103,7 @@ exports[`#loadAndBundleSpec should load And Bundle Spec demo/openapi.yaml 1`] = 
           },
         ],
         "description": "A representation of a cat",
-        "x-tags": Array [
+        "x-tags": [
           "pet",
         ],
       },
@@ -289,8 +289,8 @@ exports[`#loadAndBundleSpec should load And Bundle Spec demo/openapi.yaml 1`] = 
             "description": "Type of a pet",
             "type": "string",
           },
-          "photoUrls": Object {
-            "default": Array [],
+          "photoUrls": {
+            "default": [],
             "description": "The list of URL to a cute photos featuring pet",
             "items": {
               "format": "url",
@@ -527,138 +527,138 @@ and standard method from web, mobile and desktop applications.
     "termsOfService": "http://swagger.io/terms/",
     "title": "Swagger Petstore",
     "version": "1.1.0",
-    "x-logo": Object {
+    "x-logo": {
       "altText": "Petstore logo",
       "url": "https://redocly.github.io/redoc/petstore-logo.png",
     },
   },
   "openapi": "3.0.0",
-  "paths": Object {
-    "/accounts/{accountId}/tnoptions": Object {
-      "get": Object {
+  "paths": {
+    "/accounts/{accountId}/tnoptions": {
+      "get": {
         "description": "Retrieve a list of the TN Option orders that are associated with the account. A maximum of 1,000 orders can be retrieved per request. If no date range or specific query parameter (marked by <b>*</b> below) is provided, the order results will be limited to the last two years.",
         "operationId": "GetTnOptionOrders",
-        "parameters": Array [
-          Object {
+        "parameters": [
+          {
             "description": "The status of the TN Option order being searched for.",
             "example": "PROCESSING",
             "in": "query",
             "name": "status",
             "required": false,
-            "schema": Object {
-              "items": Object {
+            "schema": {
+              "items": {
                 "type": "string",
               },
               "type": "array",
             },
           },
-          Object {
+          {
             "description": "<b>*</b> A Telephone Number (TN) that is referenced in the order.",
             "example": "9199918388",
             "in": "query",
             "name": "tn",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "<b>*</b> The Customer Order ID is an ID assigned by the account owner to provide a reference number for the TN Option order.",
             "example": "ABCCorp12345",
             "in": "query",
             "name": "customerOrderId",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "For Date-based searches, the starting date of a date range (inclusive) that will be used to find TN Option Orders that were modified within the date range. It is in the form yyyy-MM-dd.",
             "example": "2013-10-22",
             "in": "query",
             "name": "modifiedDateFrom",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "For Date-based searches, the ending date of a date range (inclusive) that will be used to find TN Option Orders that were modified within the date range.  It is in the form yyyy-MM-dd.",
             "example": "2013-10-25",
             "in": "query",
             "name": "modifiedDateTo",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "Checks the order's creation date against this value. Orders that have a creation date after this date will be included. Format is yyyy-MM-dd.",
             "example": "2013-10-22",
             "in": "query",
             "name": "createdDateFrom",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "Checks the order's creation date against this value. Orders that have a creation date before this date will be included. Format is yyyy-MM-dd.",
             "example": "2013-10-25",
             "in": "query",
             "name": "createdDateTo",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "Checks the order's last modified date against this value. Orders that have a modification date after this date will be included. Format is yyyy-MM-dd.",
             "example": "2013-10-25",
             "in": "query",
             "name": "lastModifiedAfter",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "This is the user-name of the user that last modified the TN Option Order.",
             "example": "smckinnon",
             "in": "query",
             "name": "lastModifiedBy",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "<b>*</b> This search parameter represents the internal Bandwidth Dashboard API ID that has been assigned to the TN Option Order. This parameter is the first few characters of the internal ID - the entire ID does not need to be specified.",
             "example": "ed1c0bed-e2",
             "in": "query",
             "name": "orderIdFragment",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
-          Object {
+          {
             "description": "If set to true, a list of order details will be displayed instead the summary information.",
             "in": "query",
             "name": "orderDetails",
             "required": false,
-            "schema": Object {
+            "schema": {
               "type": "boolean",
             },
           },
         ],
-        "responses": Object {
-          "200": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "example": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+        "responses": {
+          "200": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "example": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrderReportResponse>
    <TnOptionOrders>
       <TotalCount>2</TotalCount>
@@ -766,38 +766,28 @@ and standard method from web, mobile and desktop applications.
             },
             "description": "The descriptive payload for the TN Option Orders query provides a broad range of information about the TN Option Orders found by the query, including the data associated with the order, the state of the order, and details about the order if it was successful.",
           },
-          "404": Object {
-            "content": Object {
-              "application/xml": Object {},
+          "404": {
+            "content": {
+              "application/xml": {},
             },
             "description": "Not Found.  If any errors are found in the processing of the query string a 404 will be returned.  Note that parameters that are not recognized are not considered errors, and are just ignored.
 ",
           },
         },
         "summary": "Retrieve list TN Option orders",
-        "tags": Array [
+        "tags": [
           "Tn Option",
         ],
-        "x-badges": Array [
-          Object {
-            "name": "1st Badge",
-            "type": "warning",
-          },
-          Object {
-            "name": "2nd Badge",
-            "type": "experimental",
-          },
-        ],
       },
-      "post": Object {
-        "description": "Create TN Option order to assign line features to the telephone number.<br><br>Attribute description:<ul><li>for A2pSettings attribute</li><table style=\\"text-align: left; width: 80%;\\" border=\\"1\\" cellpadding=\\"2\\" cellspacing=\\"0\\"><tbody><tr><th>Number attribute</th><th>Action value</th><th>Description of action</th></tr><tr><td>LongCode</td><td><i>systemDefault</i></td><td>Removes the per-TN A2P attributes, and it reverts to the Location/SIP Peer characteristics. Any values for Class or Campaign ID are not valid</td></tr><tr><td>LongCode</td><td><i>asSpecified</i></td><td>Sets the message class and campaign ID - this is the default if unspecified</td></tr><tr><td>LongCode</td><td><i>off</i></td><td>Will set the TN as a 'P' TN. Any values for Class or Campaign ID are not valid</td></tr><tr><td>LongCode</td><td><i>delete</i></td><td>Will delete the campaign ID from TN. Any values for Class or Campaign ID are not valid</td></tr><tr><td>LongCode</td><td><i>unchanged</i></td><td>Do nothing with respect to A2P</td></tr><tr><td>TollFree</td><td><i>systemDefault</i></td><td>Removes the per-TN A2P attributes, and it reverts to the Location/SIP Peer characteristics. Any values for Class or Campaign ID are not valid</td></tr><tr><td>TollFree</td><td><i>asSpecified</i></td><td>Sets the message class and campaign ID - this is the default if unspecified</td></tr><tr><td>TollFree</td><td><i>off</i></td><td>If the Togglz value is set to 'on' this is invalid for Toll Free telephone numbers. Any values for Class or Campaign ID in the payload are invalid. If the Togglz value is set to off this behaves like and A2P TN, where the characteristics of the TNs is set to 'P'</td></tr><tr><td>TollFree</td><td><i>unchanged</i></td><td>Do nothing with respect to A2P</td></tr></tbody></table><li>for Origination Route plan attribute</li><table style=\\"text-align: left; width: 80%;\\" border=\\"1\\" cellpadding=\\"2\\" cellspacing=\\"0\\"><tbody><tr><th>Action value</th><th>Description of action</th></tr><tr><td>asSpecified</td><td>Creates/updates the origination route plan for the TN with route plan details provided in the request </td></tr><tr><td>off</td><td>Removes the origination route plan for the TN. Route list is the request must be empty</td></tr><tr><td>unchanged</td><td>Doesn't update/create the origination route plan, even when route plan details exist in the request</td></tr></tbody></table><ul><li> Origination route plan is validated against CallForward and RewriteUser</li><ul><li type=\\"square\\">Route plan and CallForward cannot co-exist. Order is accepted but will respond with error messages on GET.</li><li type=\\"square\\">Route plan and RewriteUser cannot co-exist. Order is accepted but will respond with error messages on GET.</li></ul></ul><li>for Pindrop Enabled attribute</li><table style=\\"text-align: left; width: 80%;\\" border=\\"1\\" cellpadding=\\"2\\" cellspacing=\\"0\\"><tbody><tr><th>Action value</th><th>Description of action</th></tr><tr><td>true</td><td>Enables Pindrop integration on each phone number in the option group</td></tr><tr><td>false</td><td>Explicitly disables Pindrop integration on each phone number in the option group</td></tr></tbody></table><li>for other attribute</li><ul><li type=\\"square\\"> <i>systemDefault</i> - implies that the element profile value should be removed so that the TN changes back to the default system behavior;</li><li type=\\"square\\"> <i>unchanged</i> - the value should remain unchanged - implies a read before write model.</li><li type=\\"square\\"><u>Leaving the element out of the payload is equivalent to <i>unchanged</i>.</u></li></ul></ul>",
+      "post": {
+        "description": "Create TN Option order to assign line features to the telephone number.<br><br>Attribute description:<ul><li>for A2pSettings attribute</li><table style="text-align: left; width: 80%;" border="1" cellpadding="2" cellspacing="0"><tbody><tr><th>Number attribute</th><th>Action value</th><th>Description of action</th></tr><tr><td>LongCode</td><td><i>systemDefault</i></td><td>Removes the per-TN A2P attributes, and it reverts to the Location/SIP Peer characteristics. Any values for Class or Campaign ID are not valid</td></tr><tr><td>LongCode</td><td><i>asSpecified</i></td><td>Sets the message class and campaign ID - this is the default if unspecified</td></tr><tr><td>LongCode</td><td><i>off</i></td><td>Will set the TN as a 'P' TN. Any values for Class or Campaign ID are not valid</td></tr><tr><td>LongCode</td><td><i>delete</i></td><td>Will delete the campaign ID from TN. Any values for Class or Campaign ID are not valid</td></tr><tr><td>LongCode</td><td><i>unchanged</i></td><td>Do nothing with respect to A2P</td></tr><tr><td>TollFree</td><td><i>systemDefault</i></td><td>Removes the per-TN A2P attributes, and it reverts to the Location/SIP Peer characteristics. Any values for Class or Campaign ID are not valid</td></tr><tr><td>TollFree</td><td><i>asSpecified</i></td><td>Sets the message class and campaign ID - this is the default if unspecified</td></tr><tr><td>TollFree</td><td><i>off</i></td><td>If the Togglz value is set to 'on' this is invalid for Toll Free telephone numbers. Any values for Class or Campaign ID in the payload are invalid. If the Togglz value is set to off this behaves like and A2P TN, where the characteristics of the TNs is set to 'P'</td></tr><tr><td>TollFree</td><td><i>unchanged</i></td><td>Do nothing with respect to A2P</td></tr></tbody></table><li>for Origination Route plan attribute</li><table style="text-align: left; width: 80%;" border="1" cellpadding="2" cellspacing="0"><tbody><tr><th>Action value</th><th>Description of action</th></tr><tr><td>asSpecified</td><td>Creates/updates the origination route plan for the TN with route plan details provided in the request </td></tr><tr><td>off</td><td>Removes the origination route plan for the TN. Route list is the request must be empty</td></tr><tr><td>unchanged</td><td>Doesn't update/create the origination route plan, even when route plan details exist in the request</td></tr></tbody></table><ul><li> Origination route plan is validated against CallForward and RewriteUser</li><ul><li type="square">Route plan and CallForward cannot co-exist. Order is accepted but will respond with error messages on GET.</li><li type="square">Route plan and RewriteUser cannot co-exist. Order is accepted but will respond with error messages on GET.</li></ul></ul><li>for Pindrop Enabled attribute</li><table style="text-align: left; width: 80%;" border="1" cellpadding="2" cellspacing="0"><tbody><tr><th>Action value</th><th>Description of action</th></tr><tr><td>true</td><td>Enables Pindrop integration on each phone number in the option group</td></tr><tr><td>false</td><td>Explicitly disables Pindrop integration on each phone number in the option group</td></tr></tbody></table><li>for other attribute</li><ul><li type="square"> <i>systemDefault</i> - implies that the element profile value should be removed so that the TN changes back to the default system behavior;</li><li type="square"> <i>unchanged</i> - the value should remain unchanged - implies a read before write model.</li><li type="square"><u>Leaving the element out of the payload is equivalent to <i>unchanged</i>.</u></li></ul></ul>",
         "operationId": "CreateTnOptionOrder",
-        "requestBody": Object {
-          "content": Object {
-            "application/xml": Object {
-              "examples": Object {
-                "example": Object {
-                  "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+        "requestBody": {
+          "content": {
+            "application/xml": {
+              "examples": {
+                "example": {
+                  "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrder>
   <CustomerOrderId>TnOptionOrder1</CustomerOrderId>
   <TnOptionGroups>
@@ -869,13 +859,13 @@ and standard method from web, mobile and desktop applications.
             },
           },
         },
-        "responses": Object {
-          "201": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "example": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+        "responses": {
+          "201": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "example": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrderResponse>
   <TnOptionOrder>
     <OrderCreateDate>2016-01-15T12:01:14.324Z</OrderCreateDate>
@@ -915,12 +905,12 @@ and standard method from web, mobile and desktop applications.
             },
             "description": "Created",
           },
-          "400": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "example": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+          "400": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "example": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrderResponse>
   <ResponseStatus>
     <ErrorCode>5081</ErrorCode>
@@ -933,12 +923,12 @@ and standard method from web, mobile and desktop applications.
             },
             "description": "Bad Request A 400 response Indicates that the order could not be created. Error text and an error code will be provided in the ErrorList element.",
           },
-          "409": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "example": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+          "409": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "example": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrderResponse>
   <ResponseStatus>
     <ErrorCode>5200</ErrorCode>
@@ -953,33 +943,33 @@ and standard method from web, mobile and desktop applications.
           },
         },
         "summary": "Create TN Option order",
-        "tags": Array [
+        "tags": [
           "Tn Option",
         ],
       },
     },
-    "/accounts/{accountId}/tnoptions/{orderid}": Object {
-      "get": Object {
+    "/accounts/{accountId}/tnoptions/{orderid}": {
+      "get": {
         "description": "Retrieve information about a TN Option Order with specified ID.",
         "operationId": "GetTnOptionOrder",
-        "parameters": Array [
-          Object {
+        "parameters": [
+          {
             "description": "",
             "in": "path",
             "name": "orderid",
             "required": true,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
         ],
-        "responses": Object {
-          "200": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "example": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+        "responses": {
+          "200": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "example": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrder>
   <OrderCreateDate>2016-01-15T11:22:58.789Z</OrderCreateDate>
   <AccountId>14</AccountId>
@@ -1023,12 +1013,12 @@ and standard method from web, mobile and desktop applications.
             },
             "description": "The descriptive payload for the TN Option Orders query provides a broad range of information about the TN Option Order identified in the URL.  Included amongst the information is: <ul><li>ErrorList - the errors discovered with codes and explanations</li><li>Warnings - the warnings discovered with explanations</li><li>ProcessingStatus(RECEIVED, PROCESSING, COMPLETE, PARTIAL, FAILED) - the overall status of the order</li></ul>",
           },
-          "404": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "example": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+          "404": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "example": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TnOptionOrderReportResponse>
   <ResponseStatus>
     <Description>The resource does not exist</Description>
@@ -1042,33 +1032,33 @@ and standard method from web, mobile and desktop applications.
           },
         },
         "summary": "Retrieve TN Option order",
-        "tags": Array [
+        "tags": [
           "Tn Option",
         ],
       },
     },
-    "/accounts/{accountId}/tnoptions/{orderid}/history": Object {
-      "get": Object {
+    "/accounts/{accountId}/tnoptions/{orderid}/history": {
+      "get": {
         "description": "Retrieve the history information associated with an order.",
         "operationId": "GetOrderHistory",
-        "parameters": Array [
-          Object {
+        "parameters": [
+          {
             "description": "",
             "in": "path",
             "name": "orderid",
             "required": true,
-            "schema": Object {
+            "schema": {
               "type": "string",
             },
           },
         ],
-        "responses": Object {
-          "200": Object {
-            "content": Object {
-              "application/xml": Object {
-                "examples": Object {
-                  "application/xml": Object {
-                    "value": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+        "responses": {
+          "200": {
+            "content": {
+              "application/xml": {
+                "examples": {
+                  "application/xml": {
+                    "value": "<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OrderHistoryWrapper>
    <OrderHistory>
       <OrderDate>2020-09-17T08:56:39.607Z</OrderDate>
@@ -1093,34 +1083,28 @@ and standard method from web, mobile and desktop applications.
                 },
               },
             },
-            "description": "The history payload is a set of history records, each of which contains: <table style=\\"text-align: left; width: 80%;\\" border=\\"1\\" cellpadding=\\"2\\" cellspacing=\\"2\\">
+            "description": "The history payload is a set of history records, each of which contains: <table style="text-align: left; width: 80%;" border="1" cellpadding="2" cellspacing="2">
         <tbody>
             <tr>
                 <td>OrderDate</td>
                 <td>The date that the order history event happened</td></tr><tr><td>Status</td><td>The new state of the TN Option order - RECEIVED, PROCESSING, COMPLETE, PARTIAL, FAILED</td></tr><tr><td>Note</td><td>A Note or additional information included with the state change</td></tr><tr><td>Author</td><td>The user id that implemented the state change</td></tr></tbody></table></p>",
           },
-          "404": Object {
-            "content": Object {
-              "application/xml": Object {},
+          "404": {
+            "content": {
+              "application/xml": {},
             },
             "description": "Not found. The order id does not exist in the system.",
           },
         },
         "summary": "Retrieve TN Option order history",
-        "tags": Array [
+        "tags": [
           "Tn Option",
-        ],
-        "x-badges": Array [
-          Object {
-            "name": "Success",
-            "type": "success",
-          },
         ],
       },
     },
-    "/pet": Object {
-      "parameters": Array [
-        Object {
+    "/pet": {
+      "parameters": [
+        {
           "description": "The language you prefer for messages. Supported values are en-AU, en-CA, en-GB, en-US",
           "example": "en-US",
           "in": "header",
@@ -1165,14 +1149,15 @@ and standard method from web, mobile and desktop applications.
         "tags": [
           "pet",
         ],
-        "x-badges": Array [
-          Object {
-            "name": "Global",
-            "type": "global",
+        "x-badges": [
+          {
+            "color": "purple",
+            "name": "Beta",
+            "position": "before",
           },
         ],
-        "x-codeSamples": Array [
-          Object {
+        "x-codeSamples": [
+          {
             "lang": "C#",
             "source": "PetStore.v1.Pet pet = new PetStore.v1.Pet();
 pet.setApiKey("your api key");
@@ -1235,14 +1220,14 @@ try {
         "tags": [
           "pet",
         ],
-        "x-badges": Array [
-          Object {
-            "name": "US Only",
-            "type": "usonly",
+        "x-badges": [
+          {
+            "color": "purple",
+            "name": "Alpha",
           },
         ],
-        "x-codeSamples": Array [
-          Object {
+        "x-codeSamples": [
+          {
             "lang": "PHP",
             "source": "$form = new \\PetStore\\Entities\\Pet();
 $form->setPetId(1);
@@ -2367,11 +2352,11 @@ culpa qui officia deserunt mollit anim id est laborum.
       "description": "Everything about your Pets",
       "name": "pet",
     },
-    Object {
+    {
       "description": "Everything about your TN Options",
       "name": "Tn Option",
     },
-    Object {
+    {
       "description": "Access to Petstore orders",
       "name": "store",
     },
@@ -2802,8 +2787,8 @@ exports[`#loadAndBundleSpec should load And Bundle Spec demo/openapi-3-1.yaml 1`
             "description": "Type of a pet",
             "type": "string",
           },
-          "photoUrls": Object {
-            "default": Array [],
+          "photoUrls": {
+            "default": [],
             "description": "The list of URL to a cute photos featuring pet",
             "else": {
               "maxItems": 20,
@@ -4693,8 +4678,8 @@ exports[`#loadAndBundleSpec should load And Bundle Spec demo/swagger.yaml 1`] = 
             "description": "Type of a pet",
             "type": "string",
           },
-          "photoUrls": Object {
-            "default": Array [],
+          "photoUrls": {
+            "default": [],
             "description": "The list of URL to a cute photos featuring pet",
             "items": {
               "format": "url",

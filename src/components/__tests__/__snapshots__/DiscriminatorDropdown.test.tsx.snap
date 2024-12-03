@@ -88,7 +88,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "hideFab": false,
                     "hideHostname": false,
                     "hideRequestPayloadSample": false,
-                    "hideRequestPayloadSample": false,
                     "hideSchemaPattern": false,
                     "hideSchemaTitles": false,
                     "hideSecuritySection": false,
@@ -136,19 +135,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
-                        "experimental": Object {
+                        "experimental": {
                           "contrastText": "#fff",
                           "dark": "#540297",
                           "light": "#ba68fd",
                           "main": "#8c03fc",
                         },
-                        "global": Object {
+                        "global": {
                           "contrastText": "#fff",
                           "dark": "#4d02b0",
                           "light": "#b681fd",
                           "main": "#7c1cfc",
                         },
-                        "gray": Object {
+                        "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
                         },
@@ -202,13 +201,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
-                        "usonly": Object {
+                        "usonly": {
                           "contrastText": "#fff",
                           "dark": "#045b8b",
                           "light": "#61c4fa",
                           "main": "#079cee",
                         },
-                        "warning": Object {
+                        "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
                           "light": "#ffc966",
@@ -379,7 +378,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "hideFab": false,
                     "hideHostname": false,
                     "hideRequestPayloadSample": false,
-                    "hideRequestPayloadSample": false,
                     "hideSchemaPattern": false,
                     "hideSchemaTitles": false,
                     "hideSecuritySection": false,
@@ -427,19 +425,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
-                        "experimental": Object {
+                        "experimental": {
                           "contrastText": "#fff",
                           "dark": "#540297",
                           "light": "#ba68fd",
                           "main": "#8c03fc",
                         },
-                        "global": Object {
+                        "global": {
                           "contrastText": "#fff",
                           "dark": "#4d02b0",
                           "light": "#b681fd",
                           "main": "#7c1cfc",
                         },
-                        "gray": Object {
+                        "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
                         },
@@ -493,13 +491,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
-                        "usonly": Object {
+                        "usonly": {
                           "contrastText": "#fff",
                           "dark": "#045b8b",
                           "light": "#61c4fa",
                           "main": "#079cee",
                         },
-                        "warning": Object {
+                        "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
                           "light": "#ffc966",
@@ -657,7 +655,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "hideFab": false,
               "hideHostname": false,
               "hideRequestPayloadSample": false,
-              "hideRequestPayloadSample": false,
               "hideSchemaPattern": false,
               "hideSchemaTitles": false,
               "hideSecuritySection": false,
@@ -705,19 +702,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
-                  "experimental": Object {
+                  "experimental": {
                     "contrastText": "#fff",
                     "dark": "#540297",
                     "light": "#ba68fd",
                     "main": "#8c03fc",
                   },
-                  "global": Object {
+                  "global": {
                     "contrastText": "#fff",
                     "dark": "#4d02b0",
                     "light": "#b681fd",
                     "main": "#7c1cfc",
                   },
-                  "gray": Object {
+                  "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
                   },
@@ -771,13 +768,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
-                  "usonly": Object {
+                  "usonly": {
                     "contrastText": "#fff",
                     "dark": "#045b8b",
                     "light": "#61c4fa",
                     "main": "#079cee",
                   },
-                  "warning": Object {
+                  "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
                     "light": "#ffc966",
@@ -997,7 +994,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "hideFab": false,
                     "hideHostname": false,
                     "hideRequestPayloadSample": false,
-                    "hideRequestPayloadSample": false,
                     "hideSchemaPattern": false,
                     "hideSchemaTitles": false,
                     "hideSecuritySection": false,
@@ -1045,19 +1041,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
-                        "experimental": Object {
+                        "experimental": {
                           "contrastText": "#fff",
                           "dark": "#540297",
                           "light": "#ba68fd",
                           "main": "#8c03fc",
                         },
-                        "global": Object {
+                        "global": {
                           "contrastText": "#fff",
                           "dark": "#4d02b0",
                           "light": "#b681fd",
                           "main": "#7c1cfc",
                         },
-                        "gray": Object {
+                        "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
                         },
@@ -1111,13 +1107,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
-                        "usonly": Object {
+                        "usonly": {
                           "contrastText": "#fff",
                           "dark": "#045b8b",
                           "light": "#61c4fa",
                           "main": "#079cee",
                         },
-                        "warning": Object {
+                        "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
                           "light": "#ffc966",
@@ -1300,7 +1296,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "hideFab": false,
                     "hideHostname": false,
                     "hideRequestPayloadSample": false,
-                    "hideRequestPayloadSample": false,
                     "hideSchemaPattern": false,
                     "hideSchemaTitles": false,
                     "hideSecuritySection": false,
@@ -1348,19 +1343,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
-                        "experimental": Object {
+                        "experimental": {
                           "contrastText": "#fff",
                           "dark": "#540297",
                           "light": "#ba68fd",
                           "main": "#8c03fc",
                         },
-                        "global": Object {
+                        "global": {
                           "contrastText": "#fff",
                           "dark": "#4d02b0",
                           "light": "#b681fd",
                           "main": "#7c1cfc",
                         },
-                        "gray": Object {
+                        "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
                         },
@@ -1414,13 +1409,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
-                        "usonly": Object {
+                        "usonly": {
                           "contrastText": "#fff",
                           "dark": "#045b8b",
                           "light": "#61c4fa",
                           "main": "#079cee",
                         },
-                        "warning": Object {
+                        "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
                           "light": "#ffc966",
@@ -1574,7 +1569,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "hideFab": false,
               "hideHostname": false,
               "hideRequestPayloadSample": false,
-              "hideRequestPayloadSample": false,
               "hideSchemaPattern": false,
               "hideSchemaTitles": false,
               "hideSecuritySection": false,
@@ -1622,19 +1616,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
-                  "experimental": Object {
+                  "experimental": {
                     "contrastText": "#fff",
                     "dark": "#540297",
                     "light": "#ba68fd",
                     "main": "#8c03fc",
                   },
-                  "global": Object {
+                  "global": {
                     "contrastText": "#fff",
                     "dark": "#4d02b0",
                     "light": "#b681fd",
                     "main": "#7c1cfc",
                   },
-                  "gray": Object {
+                  "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
                   },
@@ -1688,13 +1682,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
-                  "usonly": Object {
+                  "usonly": {
                     "contrastText": "#fff",
                     "dark": "#045b8b",
                     "light": "#61c4fa",
                     "main": "#079cee",
                   },
-                  "warning": Object {
+                  "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
                     "light": "#ffc966",
@@ -1873,7 +1867,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
           "hideFab": false,
           "hideHostname": false,
           "hideRequestPayloadSample": false,
-          "hideRequestPayloadSample": false,
           "hideSchemaPattern": false,
           "hideSchemaTitles": false,
           "hideSecuritySection": false,
@@ -1921,19 +1914,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                 "light": "#eb6d6b",
                 "main": "#d41f1c",
               },
-              "experimental": Object {
+              "experimental": {
                 "contrastText": "#fff",
                 "dark": "#540297",
                 "light": "#ba68fd",
                 "main": "#8c03fc",
               },
-              "global": Object {
+              "global": {
                 "contrastText": "#fff",
                 "dark": "#4d02b0",
                 "light": "#b681fd",
                 "main": "#7c1cfc",
               },
-              "gray": Object {
+              "gray": {
                 "100": "#F5F5F5",
                 "50": "#FAFAFA",
               },
@@ -1987,13 +1980,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                 "secondary": "#666",
               },
               "tonalOffset": 0.2,
-              "usonly": Object {
+              "usonly": {
                 "contrastText": "#fff",
                 "dark": "#045b8b",
                 "light": "#61c4fa",
                 "main": "#079cee",
               },
-              "warning": Object {
+              "warning": {
                 "contrastText": "#ffffff",
                 "dark": "#996300",
                 "light": "#ffc966",
@@ -2202,7 +2195,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "hideFab": false,
               "hideHostname": false,
               "hideRequestPayloadSample": false,
-              "hideRequestPayloadSample": false,
               "hideSchemaPattern": false,
               "hideSchemaTitles": false,
               "hideSecuritySection": false,
@@ -2250,19 +2242,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
-                  "experimental": Object {
+                  "experimental": {
                     "contrastText": "#fff",
                     "dark": "#540297",
                     "light": "#ba68fd",
                     "main": "#8c03fc",
                   },
-                  "global": Object {
+                  "global": {
                     "contrastText": "#fff",
                     "dark": "#4d02b0",
                     "light": "#b681fd",
                     "main": "#7c1cfc",
                   },
-                  "gray": Object {
+                  "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
                   },
@@ -2316,13 +2308,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
-                  "usonly": Object {
+                  "usonly": {
                     "contrastText": "#fff",
                     "dark": "#045b8b",
                     "light": "#61c4fa",
                     "main": "#079cee",
                   },
-                  "warning": Object {
+                  "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
                     "light": "#ffc966",
@@ -2493,7 +2485,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "hideFab": false,
               "hideHostname": false,
               "hideRequestPayloadSample": false,
-              "hideRequestPayloadSample": false,
               "hideSchemaPattern": false,
               "hideSchemaTitles": false,
               "hideSecuritySection": false,
@@ -2541,19 +2532,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
-                  "experimental": Object {
+                  "experimental": {
                     "contrastText": "#fff",
                     "dark": "#540297",
                     "light": "#ba68fd",
                     "main": "#8c03fc",
                   },
-                  "global": Object {
+                  "global": {
                     "contrastText": "#fff",
                     "dark": "#4d02b0",
                     "light": "#b681fd",
                     "main": "#7c1cfc",
                   },
-                  "gray": Object {
+                  "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
                   },
@@ -2607,13 +2598,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
-                  "usonly": Object {
+                  "usonly": {
                     "contrastText": "#fff",
                     "dark": "#045b8b",
                     "light": "#61c4fa",
                     "main": "#079cee",
                   },
-                  "warning": Object {
+                  "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
                     "light": "#ffc966",
@@ -2771,7 +2762,6 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
         "hideFab": false,
         "hideHostname": false,
         "hideRequestPayloadSample": false,
-        "hideRequestPayloadSample": false,
         "hideSchemaPattern": false,
         "hideSchemaTitles": false,
         "hideSecuritySection": false,
@@ -2819,19 +2809,19 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "light": "#eb6d6b",
               "main": "#d41f1c",
             },
-            "experimental": Object {
+            "experimental": {
               "contrastText": "#fff",
               "dark": "#540297",
               "light": "#ba68fd",
               "main": "#8c03fc",
             },
-            "global": Object {
+            "global": {
               "contrastText": "#fff",
               "dark": "#4d02b0",
               "light": "#b681fd",
               "main": "#7c1cfc",
             },
-            "gray": Object {
+            "gray": {
               "100": "#F5F5F5",
               "50": "#FAFAFA",
             },
@@ -2885,13 +2875,13 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "secondary": "#666",
             },
             "tonalOffset": 0.2,
-            "usonly": Object {
+            "usonly": {
               "contrastText": "#fff",
               "dark": "#045b8b",
               "light": "#61c4fa",
               "main": "#079cee",
             },
-            "warning": Object {
+            "warning": {
               "contrastText": "#ffffff",
               "dark": "#996300",
               "light": "#ffc966",
