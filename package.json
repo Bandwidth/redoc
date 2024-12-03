@@ -1,7 +1,7 @@
 {
-  "name": "redoc",
-  "version": "2.2.0",
-  "description": "ReDoc",
+  "name": "bandwidth-redoc",
+  "version": "0.1.0",
+  "description": "Bandwidth ReDoc Fork",
   "repository": {
     "type": "git",
     "url": "git://github.com/Bandwidth/redoc"

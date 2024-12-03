@@ -123,7 +123,7 @@ exports[`FieldDetailsComponent renders correctly when default value is object in
     </span>
      
     <span
-      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn"
+      class="sc-kpDqfm sc-eldPxv cGRfjn ehWiAn field-example"
     >
       "example"
     </span>
@@ -175,7 +175,7 @@ exports[`FieldDetailsComponent renders correctly when field items have string ty
     >
       [
       <span
-        class="sc-kpDqfm sc-eDPEul cGRfjn cCKYVD"
+        class="sc-kpDqfm sc-eDPEul cGRfjn cCKYVD field-pattern"
       >
         ^see regex[0-9]$
       </span>

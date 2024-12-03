@@ -135,6 +135,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
+                        "experimental": {
+                          "contrastText": "#fff",
+                          "dark": "#540297",
+                          "light": "#ba68fd",
+                          "main": "#8c03fc",
+                        },
+                        "global": {
+                          "contrastText": "#fff",
+                          "dark": "#4d02b0",
+                          "light": "#b681fd",
+                          "main": "#7c1cfc",
+                        },
                         "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
@@ -189,6 +201,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
+                        "usonly": {
+                          "contrastText": "#fff",
+                          "dark": "#045b8b",
+                          "light": "#61c4fa",
+                          "main": "#079cee",
+                        },
                         "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
@@ -407,6 +425,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
+                        "experimental": {
+                          "contrastText": "#fff",
+                          "dark": "#540297",
+                          "light": "#ba68fd",
+                          "main": "#8c03fc",
+                        },
+                        "global": {
+                          "contrastText": "#fff",
+                          "dark": "#4d02b0",
+                          "light": "#b681fd",
+                          "main": "#7c1cfc",
+                        },
                         "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
@@ -461,6 +491,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
+                        "usonly": {
+                          "contrastText": "#fff",
+                          "dark": "#045b8b",
+                          "light": "#61c4fa",
+                          "main": "#079cee",
+                        },
                         "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
@@ -666,6 +702,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
+                  "experimental": {
+                    "contrastText": "#fff",
+                    "dark": "#540297",
+                    "light": "#ba68fd",
+                    "main": "#8c03fc",
+                  },
+                  "global": {
+                    "contrastText": "#fff",
+                    "dark": "#4d02b0",
+                    "light": "#b681fd",
+                    "main": "#7c1cfc",
+                  },
                   "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
@@ -720,6 +768,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
+                  "usonly": {
+                    "contrastText": "#fff",
+                    "dark": "#045b8b",
+                    "light": "#61c4fa",
+                    "main": "#079cee",
+                  },
                   "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
@@ -987,6 +1041,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
+                        "experimental": {
+                          "contrastText": "#fff",
+                          "dark": "#540297",
+                          "light": "#ba68fd",
+                          "main": "#8c03fc",
+                        },
+                        "global": {
+                          "contrastText": "#fff",
+                          "dark": "#4d02b0",
+                          "light": "#b681fd",
+                          "main": "#7c1cfc",
+                        },
                         "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
@@ -1041,6 +1107,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
+                        "usonly": {
+                          "contrastText": "#fff",
+                          "dark": "#045b8b",
+                          "light": "#61c4fa",
+                          "main": "#079cee",
+                        },
                         "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
@@ -1271,6 +1343,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "light": "#eb6d6b",
                           "main": "#d41f1c",
                         },
+                        "experimental": {
+                          "contrastText": "#fff",
+                          "dark": "#540297",
+                          "light": "#ba68fd",
+                          "main": "#8c03fc",
+                        },
+                        "global": {
+                          "contrastText": "#fff",
+                          "dark": "#4d02b0",
+                          "light": "#b681fd",
+                          "main": "#7c1cfc",
+                        },
                         "gray": {
                           "100": "#F5F5F5",
                           "50": "#FAFAFA",
@@ -1325,6 +1409,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                           "secondary": "#666",
                         },
                         "tonalOffset": 0.2,
+                        "usonly": {
+                          "contrastText": "#fff",
+                          "dark": "#045b8b",
+                          "light": "#61c4fa",
+                          "main": "#079cee",
+                        },
                         "warning": {
                           "contrastText": "#ffffff",
                           "dark": "#996300",
@@ -1526,6 +1616,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
+                  "experimental": {
+                    "contrastText": "#fff",
+                    "dark": "#540297",
+                    "light": "#ba68fd",
+                    "main": "#8c03fc",
+                  },
+                  "global": {
+                    "contrastText": "#fff",
+                    "dark": "#4d02b0",
+                    "light": "#b681fd",
+                    "main": "#7c1cfc",
+                  },
                   "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
@@ -1580,6 +1682,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
+                  "usonly": {
+                    "contrastText": "#fff",
+                    "dark": "#045b8b",
+                    "light": "#61c4fa",
+                    "main": "#079cee",
+                  },
                   "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
@@ -1806,6 +1914,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                 "light": "#eb6d6b",
                 "main": "#d41f1c",
               },
+              "experimental": {
+                "contrastText": "#fff",
+                "dark": "#540297",
+                "light": "#ba68fd",
+                "main": "#8c03fc",
+              },
+              "global": {
+                "contrastText": "#fff",
+                "dark": "#4d02b0",
+                "light": "#b681fd",
+                "main": "#7c1cfc",
+              },
               "gray": {
                 "100": "#F5F5F5",
                 "50": "#FAFAFA",
@@ -1860,6 +1980,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                 "secondary": "#666",
               },
               "tonalOffset": 0.2,
+              "usonly": {
+                "contrastText": "#fff",
+                "dark": "#045b8b",
+                "light": "#61c4fa",
+                "main": "#079cee",
+              },
               "warning": {
                 "contrastText": "#ffffff",
                 "dark": "#996300",
@@ -2116,6 +2242,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
+                  "experimental": {
+                    "contrastText": "#fff",
+                    "dark": "#540297",
+                    "light": "#ba68fd",
+                    "main": "#8c03fc",
+                  },
+                  "global": {
+                    "contrastText": "#fff",
+                    "dark": "#4d02b0",
+                    "light": "#b681fd",
+                    "main": "#7c1cfc",
+                  },
                   "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
@@ -2170,6 +2308,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
+                  "usonly": {
+                    "contrastText": "#fff",
+                    "dark": "#045b8b",
+                    "light": "#61c4fa",
+                    "main": "#079cee",
+                  },
                   "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
@@ -2388,6 +2532,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "light": "#eb6d6b",
                     "main": "#d41f1c",
                   },
+                  "experimental": {
+                    "contrastText": "#fff",
+                    "dark": "#540297",
+                    "light": "#ba68fd",
+                    "main": "#8c03fc",
+                  },
+                  "global": {
+                    "contrastText": "#fff",
+                    "dark": "#4d02b0",
+                    "light": "#b681fd",
+                    "main": "#7c1cfc",
+                  },
                   "gray": {
                     "100": "#F5F5F5",
                     "50": "#FAFAFA",
@@ -2442,6 +2598,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "secondary": "#666",
                   },
                   "tonalOffset": 0.2,
+                  "usonly": {
+                    "contrastText": "#fff",
+                    "dark": "#045b8b",
+                    "light": "#61c4fa",
+                    "main": "#079cee",
+                  },
                   "warning": {
                     "contrastText": "#ffffff",
                     "dark": "#996300",
@@ -2647,6 +2809,18 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "light": "#eb6d6b",
               "main": "#d41f1c",
             },
+            "experimental": {
+              "contrastText": "#fff",
+              "dark": "#540297",
+              "light": "#ba68fd",
+              "main": "#8c03fc",
+            },
+            "global": {
+              "contrastText": "#fff",
+              "dark": "#4d02b0",
+              "light": "#b681fd",
+              "main": "#7c1cfc",
+            },
             "gray": {
               "100": "#F5F5F5",
               "50": "#FAFAFA",
@@ -2701,6 +2875,12 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "secondary": "#666",
             },
             "tonalOffset": 0.2,
+            "usonly": {
+              "contrastText": "#fff",
+              "dark": "#045b8b",
+              "light": "#61c4fa",
+              "main": "#079cee",
+            },
             "warning": {
               "contrastText": "#ffffff",
               "dark": "#996300",

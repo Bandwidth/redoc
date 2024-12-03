@@ -1,6 +1,6 @@
 # Redoc Contributing Guide
 
-Hi! We're really excited that you are interested in contributing to Redoc. Before submitting your contribution though, please make sure to take a moment and read through the following guidelines.
+Hi! We're really excited that you are interested in contributing to ReDoc. This is the wrong place to do that if you don't work at Bandwidth :). Please contribute to [Redocly/redoc](https://github.com/Redocly/redoc) instead. If you are from Bandwidth, before submitting your contribution, please make sure to take a moment and read through the following guidelines.
 
 - [Redoc Contributing Guide](#redoc-contributing-guide)
   - [Issue Reporting Guidelines](#issue-reporting-guidelines)
