@@ -1,4 +1,4 @@
-# This is a fork of the [Redocly/redoc](https://github.com/Redocly/redoc) project. It will be supported for the Bandwidth Organization only! If you would like to contribute or have any issues with the project, please contribute to the parent project and NOT this repository.
+# This is a fork of the [Redocly/redoc](https://github.com/Redocly/redoc) project. It will be supported for the Bandwidth Organization only! If you would like to contribute or have any issues with the project, please contribute to the parent project and NOT this repository
 
 
 
@@ -6,7 +6,7 @@
   <img alt="Bandwidth Logo" src="https://raw.githubusercontent.com/Bandwidth/redoc/main//docs/images/bw-icon.svg" width="150px" />
   <img alt="Redoc logo" src="https://raw.githubusercontent.com/Redocly/redoc/main//docs/images/redoc.png" width="400px" />
 
-# Generate beautiful API documentation from OpenAPI
+## Generate beautiful API documentation from OpenAPI
 
   [![npm](http://img.shields.io/npm/v/redoc.svg)](https://www.npmjs.com/package/redoc) [![License](https://img.shields.io/npm/l/redoc.svg)](https://github.com/Redocly/redoc/blob/main/LICENSE)
 
