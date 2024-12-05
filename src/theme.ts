@@ -37,24 +37,6 @@ const defaultTheme: ThemeInterface = {
       dark: ({ colors }) => darken(colors.tonalOffset, colors.error.main),
       contrastText: ({ colors }) => readableColor(colors.error.main),
     },
-    global: {
-      main: '#7c1cfc',
-      light: ({ colors }) => lighten(colors.tonalOffset, colors.global.main),
-      dark: ({ colors }) => darken(colors.tonalOffset, colors.global.main),
-      contrastText: ({ colors }) => readableColor(colors.global.main),
-    },
-    usonly: {
-      main: '#079cee',
-      light: ({ colors }) => lighten(colors.tonalOffset, colors.usonly.main),
-      dark: ({ colors }) => darken(colors.tonalOffset, colors.usonly.main),
-      contrastText: ({ colors }) => readableColor(colors.global.main),
-    },
-    experimental: {
-      main: '#8c03fc',
-      light: ({ colors }) => lighten(colors.tonalOffset, colors.experimental.main),
-      dark: ({ colors }) => darken(colors.tonalOffset, colors.experimental.main),
-      contrastText: ({ colors }) => readableColor(colors.experimental.main),
-    },
     gray: {
       50: '#FAFAFA',
       100: '#F5F5F5',
@@ -111,6 +93,7 @@ const defaultTheme: ThemeInterface = {
     typeNameColor: theme => theme.colors.text.secondary,
     typeTitleColor: theme => theme.schema.typeNameColor,
     requireLabelColor: theme => theme.colors.error.main,
+    readOnlyLabelColor: theme => theme.colors.responses.info.color,
     labelsTextSize: '0.9em',
     nestingSpacing: '1em',
     nestedBackground: '#fafafa',
@@ -324,6 +307,7 @@ export interface ResolvedThemeInterface {
     typeNameColor: string;
     typeTitleColor: string;
     requireLabelColor: string;
+    readOnlyLabelColor: string;
     labelsTextSize: string;
     nestingSpacing: string;
     nestedBackground: string;
