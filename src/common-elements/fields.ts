@@ -87,6 +87,16 @@ export const RequiredLabel = styled(FieldLabel).attrs({
   line-height: 1;
 `;
 
+export const ReadOnlyLabel = styled(FieldLabel).attrs({
+  as: 'div',
+})`
+  color: ${props => props.theme.schema.readOnlyLabelColor};
+  font-size: ${props => props.theme.schema.labelsTextSize};
+  font-weight: normal;
+  margin-left: 20px;
+  line-height: 1;
+`;
+
 export const PropertyLabel = styled(RequiredLabel)`
   color: ${props => props.theme.colors.primary.light};
 `;

@@ -4,6 +4,7 @@ import * as React from 'react';
 import {
   ClickablePropertyNameCell,
   PropertyLabel,
+  ReadOnlyLabel,
   RequiredLabel,
 } from '../../common-elements/fields';
 import { FieldDetails } from './FieldDetails';
@@ -52,6 +53,7 @@ export class Field extends React.Component<FieldProps> {
     const { className = '', field, isLast, expandByDefault } = this.props;
     const { name, deprecated, required, kind } = field;
     const withSubSchema = !field.schema.isPrimitive && !field.schema.isCircular;
+    const readOnly = field.schema?.readOnly;
 
     const expanded = field.expanded === undefined ? expandByDefault : field.expanded;
 
@@ -60,6 +62,7 @@ export class Field extends React.Component<FieldProps> {
         {kind === 'additionalProperties' && <PropertyLabel>additional property</PropertyLabel>}
         {kind === 'patternProperties' && <PropertyLabel>pattern property</PropertyLabel>}
         {required && <RequiredLabel>required</RequiredLabel>}
+        {readOnly && <ReadOnlyLabel>read-only</ReadOnlyLabel>}
       </>
     );
 
