@@ -174,10 +174,12 @@ exports[`FieldDetailsComponent renders correctly when field items have string ty
       class="sc-kpDqfm sc-dAlyuH sc-gvZAcH cGRfjn gHomYR eXivNJ"
     >
       [ items
-      <span>
+      <span
+        class="field-constraints"
+      >
          
         <span
-          class="sc-kpDqfm sc-gFqAkR cGRfjn fYEICH"
+          class="sc-kpDqfm sc-ikkxIA cGRfjn bPXQUO"
         >
            &lt;= 128 characters 
         </span>
