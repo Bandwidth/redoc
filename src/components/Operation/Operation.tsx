@@ -56,7 +56,7 @@ export const Operation = observer(({ operation }: OperationProps): JSX.Element =
               ))}
               {summary} {deprecated && <Badge type="warning"> Deprecated </Badge>}
               {isWebhook && (
-                <Badge type="primary">
+                <Badge type="primary" color={options.webhookBadgeColor}>
                   {' '}
                   Webhook {showWebhookVerb && httpVerb && '| ' + httpVerb.toUpperCase()}
                 </Badge>

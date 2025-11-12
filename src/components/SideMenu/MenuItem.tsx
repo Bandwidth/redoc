@@ -86,7 +86,7 @@ export interface OperationMenuItemContentProps {
 export const OperationMenuItemContent = observer((props: OperationMenuItemContentProps) => {
   const { item } = props;
   const ref = React.createRef<HTMLLabelElement>();
-  const { showWebhookVerb } = React.useContext(OptionsContext);
+  const { showWebhookVerb, webhookBadgeColor } = React.useContext(OptionsContext);
 
   React.useEffect(() => {
     if (props.item.active && ref.current) {
@@ -108,7 +108,7 @@ export const OperationMenuItemContent = observer((props: OperationMenuItemConten
           </OperationBadge>
         ))}
       {item.isWebhook ? (
-        <OperationBadge type="hook">
+        <OperationBadge type="badge" color={webhookBadgeColor}>
           {showWebhookVerb ? item.httpVerb : l('webhook')}
         </OperationBadge>
       ) : (

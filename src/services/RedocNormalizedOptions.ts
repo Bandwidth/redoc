@@ -39,6 +39,7 @@ export interface RedocRawOptions {
   showObjectSchemaExamples?: boolean | string;
   showSecuritySchemeType?: boolean;
   hideSecuritySection?: boolean;
+  webhookBadgeColor?: string;
 
   unstable_ignoreMimeParameters?: boolean;
 
@@ -244,6 +245,7 @@ export class RedocNormalizedOptions {
   showObjectSchemaExamples: boolean;
   showSecuritySchemeType?: boolean;
   hideSecuritySection?: boolean;
+  webhookBadgeColor?: string;
 
   /* tslint:disable-next-line */
   unstable_ignoreMimeParameters: boolean;
@@ -318,6 +320,7 @@ export class RedocNormalizedOptions {
     this.showObjectSchemaExamples = argValueToBoolean(raw.showObjectSchemaExamples);
     this.showSecuritySchemeType = argValueToBoolean(raw.showSecuritySchemeType);
     this.hideSecuritySection = argValueToBoolean(raw.hideSecuritySection);
+    this.webhookBadgeColor = raw.webhookBadgeColor;
 
     this.unstable_ignoreMimeParameters = argValueToBoolean(raw.unstable_ignoreMimeParameters);
 
