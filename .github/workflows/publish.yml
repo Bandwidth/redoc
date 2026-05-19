@@ -5,6 +5,10 @@ on:
     types:
       - published
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   bundle:
     name: Bundle
@@ -83,7 +87,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
+          node-version: 20
           registry-url: 'https://registry.npmjs.org'
+
+      - name: Update NPM
+        run: npm install -g npm@latest
 
       - name: Checkout
         uses: actions/checkout@v6
@@ -110,8 +118,6 @@ jobs:
         run: |
           npm version $RELEASE_VERSION --no-git-tag-version
           npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
   publish-beta:
     name: Publish Beta to NPM
@@ -145,8 +151,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: '18.x'
+          node-version: 20
           registry-url: 'https://registry.npmjs.org'
+
+      - name: Update NPM
+        run: npm install -g npm@latest
 
       - name: Checkout
         uses: actions/checkout@v6
@@ -173,5 +182,3 @@ jobs:
         run: |
           npm version $RELEASE_VERSION --no-git-tag-version
           npm publish --access public --tag beta
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
