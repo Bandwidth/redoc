@@ -163,7 +163,8 @@
   "overrides": {
     "tmp": ">=0.2.4",
     "handlebars": ">=4.7.9",
-    "fast-xml-parser": ">=5.7.0"
+    "fast-xml-parser": ">=5.7.0",
+    "cheerio": "1.0.0-rc.10"
   },
   "size-limit": [
     {
