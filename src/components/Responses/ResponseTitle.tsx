@@ -39,7 +39,7 @@ function ResponseTitleComponent({
         />
       )}
       <Code>{code} </Code>
-      <Markdown compact={true} inline={true} source={title} />
+      <Markdown compact={true} inline={false} source={title} />
     </button>
   );
 }
