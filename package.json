@@ -61,6 +61,7 @@
     "pre-commit": "pretty-quick --staged && npm run lint"
   },
   "devDependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.8.0",
     "@cypress/webpack-preprocessor": "^5.17.1",
     "@size-limit/file": "^11.1.4",
     "@types/chai": "^4.2.18",
@@ -92,7 +93,7 @@
     "cypress": "^13.8.1",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
-    "esbuild-loader": "^3.0.1",
+    "esbuild-loader": "^4.3.0",
     "eslint": "^7.27.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-react": "^7.34.2",
@@ -125,30 +126,29 @@
     "url": "^0.11.1",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
+    "webpack-dev-server": "^5.2.1",
     "webpack-node-externals": "^3.0.0",
     "workerize-loader": "github:redocly/workerize-loader#webpack-5-dist"
   },
   "peerDependencies": {
     "core-js": "^3.1.4",
     "mobx": "^6.0.4",
-    "react": "^16.8.4 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0",
+    "react": "^16.8.4 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0 || ^19.0.0",
     "styled-components": "^4.1.1 || ^5.1.1 || ^6.0.5"
   },
   "dependencies": {
-    "@cfaester/enzyme-adapter-react-18": "^0.8.0",
     "@redocly/openapi-core": "^1.4.0",
     "classnames": "^2.3.2",
     "decko": "^1.2.0",
-    "dompurify": "^3.3.0",
+    "dompurify": "^3.4.0",
     "eventemitter3": "^5.0.1",
     "json-pointer": "^0.6.2",
     "lunr": "^2.3.9",
     "mark.js": "^8.11.1",
     "marked": "^4.3.0",
-    "mobx-react": "^9.1.1",
-    "openapi-sampler": "^1.5.0",
+    "mobx-react": "9.2.0",
+    "openapi-sampler": "^1.6.2",
     "path-browserify": "^1.0.1",
     "perfect-scrollbar": "^1.5.5",
     "polished": "^4.2.2",
@@ -159,6 +159,12 @@
     "stickyfill": "^1.1.1",
     "swagger2openapi": "^7.0.8",
     "url-template": "^2.0.8"
+  },
+  "overrides": {
+    "tmp": ">=0.2.4",
+    "handlebars": ">=4.7.9",
+    "fast-xml-parser": ">=5.7.0",
+    "cheerio": "1.0.0-rc.10"
   },
   "size-limit": [
     {
