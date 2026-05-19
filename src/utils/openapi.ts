@@ -393,7 +393,7 @@ export function getSerializedValue(field: FieldModel, example: any) {
     // decode for better readability in examples: see https://github.com/Redocly/redoc/issues/1138
     return decodeURIComponent(serializeParameterValue(field, example));
   } else {
-    return String(example);
+    return typeof example === 'object' ? example : String(example);
   }
 }
 
@@ -654,7 +654,7 @@ export function isRedocExtension(key: string): boolean {
     'x-codeSamples': true,
     'x-displayName': true,
     'x-examples': true,
-    'x-ignoredHeaderParameters': true,
+    'x-enumDescriptions': true,
     'x-logo': true,
     'x-nullable': true,
     'x-servers': true,
