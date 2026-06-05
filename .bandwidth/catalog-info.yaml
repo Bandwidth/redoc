@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: redoc-location
+  description: Links to additional entities in the redoc repository.
+  annotations:
+    github.com/project-slug: Bandwidth/redoc
+spec:
+  targets:
+    - ./component.yaml
